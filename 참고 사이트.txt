@@ -1,0 +1,131 @@
+<div class="about">
+            <div class="macbook">
+                <img src="img/vscodin_img/macbook.png" alt="맥북목업">
+                <div class="kakaotalk">
+                    <img src="img/vscodin_img/kakaotalk_menu.png" alt="카카오톡메뉴키">
+                    <img src="img/vscodin_img/kakaotalk_profile.png" alt="메인프로필">
+                    <p>이주현</p>
+                    <img src="img/vscodin_img/kakaotalk_person.png" alt="사람이모티콘">
+                    <p>2</p>
+                    <img src="img/vscodin_img/kakaotalk_profile.png" alt="서브프로필">
+                    <p>이주현</p>
+                    <img src="img/vscodin_img/kakaotalk_speech-bubble1.png" alt="말풍선1">
+                    <img src="img/vscodin_img/kakaotalk_speech-bubble2.png" alt="말풍선2">
+                    <img src="img/vscodin_img/kakaotalk_speech-bubble3.png" alt="말풍선3">
+                    <img src="img/vscodin_img/kakaotalk_menu_list.png" alt="카카오톡메뉴기능">
+                    <p>안녕하세요</p>
+                    <p>디지털 감성을 구현하는 <br>
+                    신입 웹 퍼블리셔 이주현입니다.</p>
+                    <p>HTML, CSS, JavaScript로 <br>
+                    가볍고 견고한, 그리고 <br>
+                    모든 화면에서 유려한 웹을 만듭니다.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+/* about 영역 */
+.wrap .about{
+    margin: 200px 100px;
+}
+.wrap .about .macbook{
+    position: relative;
+}
+.wrap .about .macbook img:nth-child(4){
+    position: absolute;
+    top: 250px; left: 250px;
+    z-index: 100;
+}
+.wrap .about .macbook .kakaotalk{
+    position: absolute;
+    top: 40px; left: 180px;
+    width: 935px; height: 600px;
+    background: #bacee0;
+    z-index: 50;
+    overflow: hidden;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(1){
+    position: absolute;
+    top: 10px; right: 15px;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(2){
+    position: absolute;
+    top: 40px; left: 40px;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(6){
+    position: absolute;
+    top: 190px; left: 40px;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(3){
+    position: absolute;
+    top: 60px; left: 165px;
+    font-size: 28px;
+    font-family: 'NanumGothic';
+    font-weight: 400;
+    color: #000;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(4){
+    position: absolute;
+    top: 110px; left: 165px;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(5){
+    position: absolute;
+    top: 101px; left: 197px;
+    color: #67727c;
+    font-family: 'MalgunGothic';
+    font-size: 28px;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(7){
+    position: absolute;
+    top: 190px; left: 165px;
+    font-size: 28px;
+    font-family: 'NanumGothic';
+    font-weight: 400;
+    color: #000;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(8){
+    position: absolute;
+    top: 235px; left: 153px;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(9){
+    position: absolute;
+    top: 320px; left: 160px;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(10){
+    position: absolute;
+    top: 433px; left: 160px;
+}
+.wrap .about .macbook .kakaotalk img:nth-child(11){
+    position: absolute;
+    top: 100px; right: 20px;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(12){
+    position: absolute;
+    top: 255px; left: 174px;
+    font-family: 'NanumGothic';
+    font-size: 24px;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(13){
+    position: absolute;
+    top: 340px; left: 174px;
+    font-family: 'NanumGothic';
+    font-size: 24px;
+    line-height: 1.3;
+}
+.wrap .about .macbook .kakaotalk p:nth-child(14){
+    position: absolute;
+    top: 456px; left: 174px;
+    font-family: 'NanumGothic';
+    font-size: 24px;
+    line-height: 1.3;
+}

@@ -1,0 +1,548 @@
+@charset "utf-8";
+
+.wrap {
+    background: url(../img/vscodin_img/bg.jpg) top/contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* main 영역 */
+.wrap #main {
+    background: url(../img/vscodin_img/main_bg.jpg) no-repeat center/cover;
+    max-width: 1920px;
+    height: 830px;
+    position: relative;
+}
+
+.wrap #main header {
+    display: none;
+}
+
+.wrap #main .header_mobile1 {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    z-index: 1000;
+    backdrop-filter: blur(0);
+}
+
+.wrap #main header h1 a img {
+    width: 400px;
+}
+.wrap #main header ul {
+    display: none;
+}
+
+.wrap #main header ul li.on::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    background: #ff6200;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrap #main img:nth-child(2) {
+    width: 230px;
+    height: 270px;
+    position: absolute;
+    top: 460px;
+    left: 15px;
+    z-index: 1;
+}
+
+.wrap #main img:nth-child(3) {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 610px;
+    left: 150px;
+    z-index: 0;
+}
+
+.wrap #main img:nth-child(4) {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 530px;
+    left: 260px;
+    z-index: 2;
+}
+
+.wrap #main img:nth-child(5) {
+    display: none;
+}
+
+.wrap #main img:nth-child(6) {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 173px;
+    right: 130px;
+    z-index: 1000;
+}
+
+.wrap #main img:nth-child(7) {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 80px;
+}
+
+/* about 영역 */
+.wrap #about {
+    margin: 200px 100px;
+    position: relative;
+}
+
+.wrap #about .macbook {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 100;
+    display: none;
+}
+
+.wrap #about .phone {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    z-index: 100;
+    margin-top: 150px;
+}
+
+.wrap #about .mobile_kakaotalk {
+    position: absolute;
+    top: 10px;
+    left: 82px;
+    width: 80%;
+    height: 81%;
+    overflow-y: scroll;
+    z-index: -99;
+}
+
+.wrap #about .mobile_kakaotalk img {
+    width: 225px;
+    height: auto;
+}
+
+.wrap #about .text {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+}
+
+.wrap #about .text h2 {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 30px;
+}
+
+.wrap #about .text p {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 20px;
+    color: rgba(49, 49, 49, 0.418);
+    margin-top: 0;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.wrap #about .header_mobile2.on{
+    position: fixed;
+    z-index: 9999999;
+    width: 100%;
+    top: 200px;
+    transition: all 0.4s;
+    display: block;
+}
+.wrap #about .header_mobile2 h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -200px;
+    left: -120px;
+    padding: 5px 0 0 25px;
+/*     border-bottom: 1px solid #6b6b6b57; */
+    width: 425px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(5px);
+}
+.wrap #about .header_mobile2 .menu{
+    position: absolute;
+    top: -207px; right: 100px;
+}
+
+.wrap #about .header_mobile2 h1 a > img {
+    width: 90px;
+    height: 90px;
+}
+
+/* menu */
+.gnb {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999999;
+}
+
+.gnb li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gnb li a {
+    font-family: 'Shilla_CultureB-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
+    display: block;
+    padding: 20px 0;
+    color: #222;
+    text-align: center;
+    transition: all 0.2s;
+    font-size: 20px;
+}
+
+.gnb li a:hover {
+    color: #fff;
+    background: #f2cc6b;
+}
+
+.wrap #about .header_mobile2 .menu {
+    display: inline-block;
+    height: 100px;
+    padding: 35px 25px;
+    transition: all 0.3s;
+}
+.menuline .item {
+    display: block;
+    background: #6b6b6b;
+    width: 40px;
+    height: 3px;
+    margin: 0 0 10px;
+    transition: all 0.3s;
+}
+
+.menuline.on .item:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 2px;
+    /* 
+                transform-origin: 요소의 중심점
+                - 기본 중심점 -> center(x, y)
+                - 값을 하나만 선언 -> x축만 2px y축은 50%
+            
+            */
+}
+
+.menuline.on .item:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 2px;
+}
+
+.menuline.on .item:nth-child(2) {
+    opacity: 0;
+}
+
+
+
+/* works 영역 */
+.wrap #works {
+    position: relative;
+    margin: 1200px 170px;
+}
+
+.wrap #works img:nth-child(1) {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -20%);
+}
+
+.wrap #works .textArea1 {
+    width: 200px;
+    position: absolute;
+    top: 250px;
+    right: -40px;
+}
+
+.wrap #works .textArea1 h2 {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wrap #works .textArea1 p {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 18px;
+    font-weight: 500;
+    color: #727272af;
+    margin-top: 50px;
+    line-height: 1.7;
+}
+
+.wrap #works .textArea1 p .html {
+    position: absolute;
+    top: 335px;
+    left: 90px;
+}
+
+.wrap #works .textArea1 p .html img {
+    width: 40px;
+}
+
+.wrap #works .textArea1 p .css {
+    position: absolute;
+    top: 335px;
+    left: 150px;
+}
+
+.wrap #works .textArea1 p .css img {
+    width: 40px;
+}
+
+.wrap #works .textArea1 a {
+    border-radius: 31.44px;
+    background: #706e6e71;
+    padding: 13px 22px;
+    color: #fff;
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+
+.wrap #works img:nth-child(3) {
+    width: 400px;
+    position: absolute;
+    top: 900px;
+    left: 0px;
+    transform: translate(-40%, -20%);
+}
+
+.wrap #works .textArea2 {
+    width: 250px;
+    position: absolute;
+    top: 1145px;
+    right: -90px;
+}
+
+.wrap #works .textArea2 h2 {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.wrap #works .textArea2 p {
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 18px;
+    font-weight: 500;
+    color: #727272af;
+    margin-top: 50px;
+    line-height: 1.7;
+}
+
+.wrap #works .textArea2 p .html {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+.wrap #works .textArea2 p .html img {
+    width: 40px;
+}
+
+.wrap #works .textArea2 p .css {
+    position: absolute;
+    top: 400px;
+    left: 160px;
+}
+
+.wrap #works .textArea2 p .css img {
+    width: 40px;
+}
+
+.wrap #works .textArea2 p .javascript {
+    position: absolute;
+    top: 400px;
+    left: 220px;
+}
+
+.wrap #works .textArea2 p .javascript img {
+    width: 40px;
+}
+
+.wrap #works .textArea2 a {
+    border-radius: 31.44px;
+    background: #706e6e71;
+    padding: 13px 22px;
+    color: #fff;
+    font-family: 'Shilla_CultureB-Bold';
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+
+
+/* design 영역 */
+.wrap .design {
+    margin: 3100px auto 200px;
+    display: block;
+    width: 430px;
+    gap: 80px;
+}
+
+.wrap .design h2 {
+    font-size: 40px;
+    font-family: 'Shilla_CultureB-Bold';
+    letter-spacing: 5px;
+    width: 430px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.wrap .design img {
+    display: block;
+    width: 70%;
+    height: 90%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.wrap .design img:nth-child(4) {
+    width: inherit;
+    height: inherit;
+}
+
+
+/* CONTACT 영역 */
+.wrap #contact {
+    background: url(../img/vscodin_img/main_bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.wrap #contact img:first-child {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+}
+
+.wrap #contact img:nth-child(2) {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+.wrap #contact .speechbubble_text {
+    position: absolute;
+    top: 160px;
+    right: 350px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.wrap #contact .speechbubble_text p {
+    margin-top: 20px;
+}
+
+.wrap #contact .speechbubble_text p:nth-child(2) {
+    font-weight: 600;
+    font-size: 35px;
+    margin: 60px 0;
+}
+
+
+
+/* CONTACT 영역 */
+.wrap #contact {
+    background: url(../img/vscodin_img/main_bg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 780px;
+    position: relative;
+}
+
+.wrap #contact img:first-child {
+    width: 225px;
+    height: 320px;
+    position: absolute;
+    top: 390px;
+    left: 90px;
+}
+
+.wrap #contact img:nth-child(2) {
+    display: none;
+}
+
+.wrap #contact img:nth-child(3) {
+    width: 380px;
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+}
+
+.wrap #contact img:nth-child(4) {
+    width: 200px;
+    position: absolute;
+    top: 600px;
+    left: 50px;
+}
+
+.wrap #contact img:nth-child(5) {
+    width: 200px;
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    transform: scaleX(-1);
+}
+
+.wrap #contact .speechbubble_text {
+    width: 320px;
+    position: absolute;
+    top: 135px;
+    right: 35px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.wrap #contact .speechbubble_text p {
+    margin-top: 5px;
+}
+
+.wrap #contact .speechbubble_text p:nth-child(2) {
+    font-weight: 600;
+    font-size: 23px;
+    margin: 30px 0;
+}
+
+/* footer 영역 */
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #ffdc80;
+    padding: 20px;
+}
